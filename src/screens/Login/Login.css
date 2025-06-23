@@ -1,0 +1,117 @@
+.Log-in {
+  width: 250vh;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+.loginInfo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  position: fixed;
+ background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow:0 3px 12px rgba(0, 0, 0, 0.5), inset 0 0 100px rgba(255, 255, 255, 0.4); 
+  border-radius: 4px;
+
+}
+.loginInfo .Close {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.banner h1 {
+  font-family: "platypi", serif;
+  margin: 0;
+  font-size: 25px;
+}
+.banner img {
+  height: 40px;
+  width: 40px;
+}
+.banner {
+  margin-top: 30px;
+  margin-left: 75px;
+  position: relative;
+  height: 20%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 1));
+  z-index: 1000;
+
+  /* background-color: red; */
+}
+.detailContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+.detailContainer input {
+  margin: 5px;
+  padding-left: 10px;
+  border: none;
+  height: 3vw;
+  width: 30vw;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: text;
+  caret-color: #ffffff;
+  border-radius: 4px;
+}
+.detailContainer input:focus,input:hover {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.detailContainer input::placeholder {
+  font-weight: 400;
+  color: ivory;
+}
+.emailContainer,
+.passwordContainer,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin-top: 20px;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #404ab4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}

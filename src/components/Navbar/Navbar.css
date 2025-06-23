@@ -1,0 +1,87 @@
+.Nav-Bar {
+  margin: 0;
+  height: 9vh;
+  background: linear-gradient(rgb(10, 9, 19));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.1px solid;
+  border-image: linear-gradient(to right, #ff00cc, #f67b33, #3333ff) 1;
+  font-size: 7px;
+}
+.Logo {
+  cursor: pointer;
+  display: flex;
+  font-family: "platypi", serif;
+  font-size: 1rem;
+  align-items: center;
+}
+.Logo > img {
+  width: 1.5rem;
+}
+.navLogin {
+  height: 50%;
+  width: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  border-radius: 3px;
+}
+.navLogin:hover {
+  cursor: pointer;
+  background-color: #200736;
+}
+
+.nav-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Account-button {  
+  padding: 5px 2px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.Account-button:hover {
+  background-color: #200736;
+  border-radius: 4px;
+}
+.Account-button img{
+  width: 1rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: -50%;
+  background:rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  min-width: 100px;
+  z-index: 999;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 2px 100px rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items:center ;
+}
+
+.dropdown-item:hover {
+  background:rgba(0,0,0,0.2);
+}
+.Logout{
+  padding-left: 5px;
+  width: 10px;
+}

@@ -1,0 +1,51 @@
+.Bottom-Bar {
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8%;
+  width: 40%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0px 10px rgba(255, 255, 255, 0.2),0 3px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.bnav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  height: 80%;
+  width: 90%;
+}
+.bnav-links li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out, width 0.1s ease-in-out,
+    font-weight 0.1s ease-in-out;
+}
+.bnav-links li:hover {
+  font-weight: 600;
+  box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0.2),0 0px 1px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+.active {
+  font-weight: 600;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+}

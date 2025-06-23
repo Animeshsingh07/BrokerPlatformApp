@@ -1,0 +1,56 @@
+.orderbook-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+    display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px); /* Adjust based on your navbar + bottombar height */
+  overflow: hidden;
+}
+.order-list {
+  list-style: none;
+ margin: 0.5rem;
+  overflow-y: auto;
+  padding: 1rem;
+    height: 27rem;
+    border-radius: 4px;
+}
+
+.order-item {
+  height: 15%;
+    list-style: none;
+  background-color: rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(5px);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow:0 0 3px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item.buy {
+  border-left: 4px solid green;
+}
+
+.order-item.sell {
+  border-left: 4px solid red;
+}
+
+.order-symbol {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.order-info {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+.order-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}

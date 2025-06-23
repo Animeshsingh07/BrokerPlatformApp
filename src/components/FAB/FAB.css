@@ -1,0 +1,117 @@
+.fab-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease, bottom 0.3s ease;
+}
+
+.fab-main-btn {
+  width: 31px;
+  height: 31px;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0.2), 0 0px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fab-main-btn:hover {
+  box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0.3),0 0px 1px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.fab-main-btn.rotate {
+  transform: rotate(45deg);
+}
+
+.fab-options {
+  display: none;
+  position: absolute;
+  right: 0;
+  gap: 6px;
+  flex-direction: column;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fab-options.open {
+  display: flex;
+  opacity: 1;
+}
+
+/* Default: expand upward */
+.fab-options.up {
+  bottom: 50px;
+}
+
+.fab-options.down {
+  top: 50px;
+}
+.fab-options.left {
+  left: 0;
+}
+
+.fab-options.right {
+  right: 0;
+}
+.fab-options.center {
+  right: -80%;
+}
+
+.fab-options.open.up {
+  animation: slideUp 0.2s ease;
+}
+
+.fab-options.open.down {
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fab-btn {
+  width: 80px;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.fab-btn.buy {
+  background: rgba(0, 144, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+.fab-btn.buy:hover {
+  background: rgba(0, 255, 0, 0.6);
+}
+.fab-btn.sell {
+  background: rgba(144, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+.fab-btn.sell:hover {
+  background: rgba(255, 0, 0, 0.6);
+}

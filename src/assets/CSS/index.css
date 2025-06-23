@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 113vh;
+  background-image: url(src/assets/Images/bg-main-2.png);
+  background-size: cover; /* ✅ Always covers full screen */
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 1),
+    transparent 40%,
+    rgba(0, 0, 0, 1)
+  );
+  z-index: -1;
+}
+/* Global Custom Scrollbar Styles (WebKit browsers) */
+* {
+  scrollbar-width: thin;                         /* For Firefox */
+  scrollbar-color: rgba(180, 180, 180, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(120, 120, 120, 0.6), rgba(200, 200, 200, 0.4));
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(150, 150, 150, 0.8), rgba(230, 230, 230, 0.6));
+}
