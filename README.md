@@ -1,4 +1,4 @@
-https://github.com/Animeshsingh07/BrokerPlatformApp.git
+Installation Instructions
 
 # 1. Clone the repository
 git clone https://github.com/Animeshsingh07/BrokerPlatformApp.git
